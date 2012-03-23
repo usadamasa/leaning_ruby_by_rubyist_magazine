@@ -1,15 +1,18 @@
 num = gets.to_i
 
-if num == 0
-	puts num
-elsif num % 15 == 0
-	puts 'fizzbuzz'
+num.times do |i|
+	if i == 0
+		puts i
+	elsif i % 15 == 0
+		puts 'fizzbuzz'
 
-elsif num % 5 == 0 
-	puts 'fizz'
+	elsif i % 5 == 0 
+		puts 'fizz'
 
-elsif num % 3 == 0
-	puts 'buzz'
-else
-	puts num
+	elsif i % 3 == 0
+		puts 'buzz'
+	else
+		puts i
+	end
 end
+
